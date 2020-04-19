@@ -84,6 +84,7 @@ h1 {
 h2 {
 	font-family: 'Big Shoulders Display';
 	font-size: 48px;
+	text-transform: uppercase;
 	color: #0A0B0C;
 	margin-bottom: 40px;
 }
@@ -238,7 +239,9 @@ p {
 	width: auto;
 	background-image: url("images/footer.png");
 	background-size: 750px 200px;
+	background-position: bottom;
 	background-repeat: repeat-x;
+	background-color: #0A0B0C;
 }
 
 .border {
@@ -297,6 +300,20 @@ p {
 
 	.navbar ul li .home-button {
 		visibility: visible;
+	}
+
+	.footer {
+		height: 296px;
+	}
+
+	.footer h3 {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		margin: auto;
+		width: auto;
+		padding-top: 20px;
+		text-align: center;
 	}
 
 	.menu {
