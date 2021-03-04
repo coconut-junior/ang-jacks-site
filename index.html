@@ -4,17 +4,30 @@
 	<title>Ang & Jack's Eatery - Home</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?u8vidh">
 	<script src="https://kit.fontawesome.com/c035da7a70.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="banner">
-		<h1>Ang & Jack&apos;s Eatery</h1>
-		<a href = "cuisine.html"><div class = "button-light">VIEW MENU</div></a>
+	<div class="hero">
+		<video autobuffer preload muted = "true" loop = "true" autoplay="true">
+			<source src = "media/hero.mp4" type = "video/mp4">
+		</video>
+		<h1 style = "z-index: 1;">Ang & Jack&apos;s Eatery</h1>
+		<a style = "z-index: 1;" href = "cuisine.html"><div class = "button-light">VIEW MENU</div></a>
 	</div>
+
+	<ul class = "mobile-nav">
+		<li><a href="about.html">About</a></li>
+		<li><a href="cuisine.html">Cuisine</a></li>
+		<li><a href="booking.html">Booking</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
 	<div class="navbar">
 		<ul>
-			<i class="fas fa-bars menu"></i>
+			<div class = "hamburger" onclick = "openMenu()" style = "justify-content:center;display:flex;flex-direction:column;width: 48px;height: 48px; position:absolute;margin: 40px;">
+				<div class = "bar"></div>
+				<div class = "bar"></div>
+				<div class = "bar"></div>
+			</div> 
 			<li><a href="about.html">About</a></li>
 			<li><a href="cuisine.html">Cuisine</a></li>
 			<li><a href="index.html"><div class="home-button"></div></a></li>
@@ -66,12 +79,71 @@
 	</div>
 	<div class = "border"></div>
 	<div class = "media-link-banner">
-		<a href = ""><div class="media-link socicon-facebook"></div></a>
-		<a href = ""><div class="media-link socicon-instagram"></div></a>
-		<a href = ""><div class="media-link socicon-twitter"></div></a>
+		<a href = "">
+			<div class = "media-link">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					viewBox="0 0 330 337.1" style="enable-background:new 0 0 330 337.1;" xml:space="preserve">
+
+				<g>
+					<path class="st0" d="M95.1,192.7c0-10,0-19.4,0-28.7c0-5.1,0.2-10.3,0.1-15.4c-0.1-3.5,1.1-4.8,4.7-4.7c10.7,0.2,21.4-0.1,32.2,0.1
+						c4.4,0.1,5.6-1.5,5.6-5.8c-0.2-12.8-0.6-25.7,0.3-38.5c1.2-17.7,7.2-33.6,22.2-44.7c7.9-5.9,16.9-9.1,26.5-10.9
+						c14.7-2.7,29.4-3,44.1-1.2c1.3,0.2,2.6,0.6,4.2,1.1c0,4.2,0.1,8.4,0,12.6c-0.2,8.9-0.8,17.8-0.7,26.7c0.1,4.3-1.4,5.3-5.5,5.2
+						c-9,0-18.1-0.1-27.1,0.9c-9.5,1.1-14.7,7.9-14.7,17.6c0,11.9,0,23.8,0,36.6c15.3,0,30.5,0,46.5,0c-0.5,5.1-0.8,9.2-1.4,13.2
+						c-1.4,10.3-3,20.6-4.3,30.9c-0.5,3.6-1.6,5.1-5.6,5c-11.5-0.3-22.9-0.1-35.5-0.1c0,34.2,0,68,0,102.2c-2.3,0.2-3.7,0.4-5,0.4
+						c-13,0-26-0.1-39,0.1c-3.6,0.1-4.6-1.2-4.7-4.7c-0.2-23.4-0.5-46.8-0.9-70.2c-0.1-8-0.5-16-0.4-24c0-3.1-1.2-3.8-4-3.8
+						c-11,0.1-22,0-33.1,0C98.2,192.7,96.5,192.7,95.1,192.7z"/>
+				</g>
+				</svg>
+			</div>
+		</a>
+		<a href = ""><div class="media-link">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 330 337.1" style="enable-background:new 0 0 330 337.1;" xml:space="preserve">
+
+			<g>
+				<path class="st0" d="M38.7,230.3c0-41.1,0-82.2,0-123.3c0.2-0.9,0.3-1.8,0.5-2.6c1.7-6.6,2.5-13.6,5.3-19.6
+					c12.6-27.2,34.2-41.8,64.2-42.2c37.5-0.5,75-0.2,112.5-0.1c14.5,0,28,3.9,39.8,12.4c20.1,14.3,30.1,34,30.2,58.6
+					c0.1,36.8,0.1,73.6,0,110.5c0,4.7-0.3,9.6-1.3,14.2c-6.3,28.6-23.7,46.9-51.9,54.7c-3.7,1-7.6,1.4-11.3,2.1c-41.1,0-82.2,0-123.3,0
+					c-2.6-0.4-5.2-0.7-7.7-1.3c-28.6-6.4-47-23.7-54.8-52C39.8,237.9,39.4,234.1,38.7,230.3z M61.1,168.6c0,18.2,0,36.5,0,54.7
+					c0,5.8,0.6,11.5,2.5,17c7.2,20.1,24.4,32.1,46.3,32.2c36.7,0,73.3,0.1,110-0.1c5.6,0,11.4-0.8,16.7-2.5
+					c20.2-6.8,32.2-24.3,32.3-46.1c0-36.7,0.1-73.5-0.1-110.2c0-5.5-0.8-11.2-2.5-16.4c-6.7-20.1-24.2-32.2-45.8-32.3
+					c-36.9-0.1-73.8-0.1-110.7,0c-16.6,0-29.9,6.5-39.8,19.9c-6.3,8.6-8.8,18.4-8.8,28.9C61.1,132,61.1,150.3,61.1,168.6z"/>
+				<path class="st0" d="M230.1,168.7c0,35.8-29.5,65.2-65.2,65c-35.8-0.1-65.2-29.6-65-65.2c0.2-35.8,29.4-64.9,65-64.9
+					C200.7,103.5,230.1,133,230.1,168.7z M165.1,126c-23.4-0.1-42.6,19-42.7,42.5c-0.1,23.4,19,42.6,42.5,42.7
+					c23.4,0.1,42.6-19,42.7-42.5C207.7,145.3,188.7,126.1,165.1,126z"/>
+				<path class="st0" d="M232.8,84.7c9,0,16.6,7.5,16.4,16.5c-0.1,9-7.5,16.3-16.4,16.3c-9,0-16.6-7.6-16.4-16.5
+					C216.5,91.9,223.8,84.7,232.8,84.7z"/>
+			</g>
+			</svg>
+
+		</div></a>
+		<a href = ""><div class="media-link">
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				viewBox="0 0 330 337.1" style="enable-background:new 0 0 330 337.1;" xml:space="preserve">
+
+			<g>
+				<path class="st0" d="M53.8,238.6c25,2.5,47.3-3.7,67.2-18.8c-2-0.2-4-0.4-6-0.7c-5.8-0.9-11.3-2.9-16.4-5.9
+					c-7.5-4.5-13.2-10.7-17.2-18.4c-1-1.9-1.9-3.9-2.5-6c-0.3-0.8-0.2-0.9,0.6-0.7c2.8,0.5,5.6,0.7,8.4,0.7c3.6-0.1,7.2-0.6,10.7-1.4
+					c0,0,0.1-0.1,0.2-0.2c-0.6-0.1-1-0.2-1.5-0.4c-8.1-2-15.1-6-21-11.8c-6.7-6.7-11-14.6-12.8-24c-0.5-2.7-0.8-5.5-0.8-8.3
+					c0-1,0-1,0.8-0.6c5.7,3,11.7,4.8,18.1,5.2c0.4,0,0.8,0.3,1.2,0c0-0.4-0.3-0.4-0.5-0.6c-8.1-5.8-13.8-13.5-17-23
+					c-1.3-4-2-8.1-2.2-12.4c-0.4-8.6,1.6-16.7,5.7-24.3c0.4-0.7,0.6-0.6,1-0.1c3.5,4.3,7.2,8.3,11.2,12c7.8,7.3,16.4,13.6,25.7,18.8
+					c7,3.9,14.3,7.2,21.9,9.7c7.1,2.4,14.3,4.1,21.7,5.2c4,0.6,8.1,1,12.2,1.3c0.7,0.1,0.9,0,0.7-0.8c-0.7-3.2-1-6.4-1-9.7
+					c0-4.4,0.6-8.8,1.9-13c4.6-14.4,13.9-24.4,28-29.8c7.8-3,15.9-3.6,24.1-2.1c9.5,1.7,17.7,6.1,24.4,13c0.5,0.5,1,0.6,1.7,0.5
+					c9.7-2,18.8-5.6,27.3-10.5c0.2-0.1,0.3-0.3,0.6-0.2c-1.7,5.2-4.2,9.9-7.6,14.2c-3.4,4.3-7.4,7.8-11.9,10.7c8.8-1,17.3-3.4,25.6-7
+					c-0.3,0.8-0.7,1.3-1.1,1.8c-4.4,6.2-9.4,11.8-15.1,16.7c-1.9,1.6-3.8,3.2-5.8,4.6c-0.5,0.3-0.6,0.7-0.6,1.3
+					c0.1,1.6,0.1,3.1,0.1,4.7c0,10.1-1.2,20-3.5,29.8c-2.7,11.5-6.9,22.5-12.5,33c-4.7,8.8-10.2,16.9-16.7,24.4
+					c-6.5,7.5-13.7,14.1-21.7,19.9c-10.5,7.6-22,13.3-34.3,17.2c-7.1,2.3-14.3,3.9-21.7,4.9c-5,0.7-10.1,1.1-15.2,1.2
+					c-4,0.1-7.9,0.1-11.9-0.1c-9.2-0.5-18.3-2-27.2-4.5c-9.7-2.7-18.9-6.4-27.7-11.3c-2.4-1.3-4.7-2.8-7.1-4.2
+					C54.1,239,54.1,238.9,53.8,238.6z"/>
+			</g>
+			</svg>
+
+		</div></a>
 	</div>
 	<div class = "footer">
 		<h3>801.555.5555</h3>
 	</div>
+
+	<script src="index.js"></script>
 </body>
 </html>

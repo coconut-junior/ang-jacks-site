@@ -26,15 +26,18 @@
 
 body {
 	background-color: #D7A07F;
+	overflow-x: hidden;
 }
 
 .navbar {
 	z-index: +1;
 	height: 96px;
-	position: relative;
-	top: -640px;
-	transition: 0.7s;
-	margin-auto;
+	position: absolute;
+	top: 0px;
+	transition: 0.3s;
+	margin: auto;
+	width: 100vw;
+	z-index: 2;
 }
 
 .navbar:hover {
@@ -46,7 +49,8 @@ body {
 	width: 72px;
 	background-image: url('images/home-button.png');
 	background-size: contain;
-	transition: 0.7s;
+	background-repeat: no-repeat;
+	transition: 0.3s;
 }
 
 .menu {
@@ -57,7 +61,7 @@ body {
 	left: 10px;
 	top: 10px;
 	visibility: hidden;
-	transition: 0.7s;
+	transition: 0.3s;
 }
 
 .menu:hover {
@@ -110,7 +114,7 @@ h3 {
 
 .navbar ul li {
 	float: left;
-	width: 50px;
+	width: 72px;
 	margin: auto;
 }
 
@@ -118,7 +122,7 @@ li a {
 	font-family: 'hells_riderregular';
 	font-size: 18px;
 	color: #F1F2F2;
-	transition: 0.3s;
+
 }
 
 li a:hover {
@@ -129,18 +133,7 @@ p {
 	letter-spacing: 3px;
 }
 
-.banner {
-	display: flex;
-	align-items: center;
-	-webkit-justify-content: center;
-	-webkit-flex-direction: column;
-	height: 640px;
-	width: auto;
-	background-size: cover;
-	background-image: url("images/banner2.jpg");
-	background-color: rgba(0,0,0,0.5);
-	background-blend-mode: darken;
-}
+
 
 .button-light {
 	display: flex;
@@ -234,9 +227,29 @@ p {
 	letter-spacing: 3px;
 }
 
+video {
+	position: absolute;
+	height: 640px;
+	width: 100vw;
+	object-fit: cover;
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	-webkit-justify-content: center;
+	-webkit-flex-direction: column;
+	height: 640px;
+	width: 100vw;
+	margin-bottom: 80px;
+	background-color: white;
+	overflow: hidden;
+	flex-wrap: wrap;
+}
+
 .footer {
 	height: 200px;
-	width: auto;
+	width: 100vw;
 	background-image: url("images/footer.png");
 	background-size: 750px 200px;
 	background-position: bottom;
@@ -246,7 +259,7 @@ p {
 
 .border {
 	height: 60px;
-	width: auto;
+	width: 100vw;
 	background-image: url("images/footer-border.png");
 	background-size: 104px 60px;
 	background-position: center;
@@ -263,15 +276,16 @@ p {
 	border-width: 2px;
 	border-color: #D7A07F;
 	border-radius: 50%;
-	color: #D7A07F;
-	height: 48px;
-	width: 48px;
+	fill: #D7A07F;
+	height: 38px;
+	width: 38px;
 	margin: 20px;
 	transition: 0.3s;
+	padding: 10px;
 }
 
 .media-link:hover {
-	color: #0A0B0C;
+	fill: #0A0B0C;
 	background-color: #D7A07F;
 }
 
@@ -281,6 +295,17 @@ p {
 	-webkit-justify-content: center;
 	height: 96px;
 	background-color: #0A0B0C;
+	width: 100vw;
+}
+
+.bar {
+	width: 100%;
+	height: 2px;
+	margin: auto;
+	position: relative;
+	background-color: white;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 .footer h3 {
@@ -291,9 +316,46 @@ p {
 	width: 100px;
 }
 
+.mobile-nav {
+	display: flex;
+	flex-direction: column;
+	background-color: #0A0B0C;
+	height: 0;
+	margin: auto;
+	width: 100vw;
+	position: absolute;
+	top:0;
+	left:0;
+	transition: 0.3s;
+	overflow:hidden;
+	visibility: hidden;
+	z-index: 2;
+}
+
+.mobile-nav li {
+	font-size: 18px;
+	text-align: center;
+	width: auto;
+	margin-right: 20px;
+	line-height: 48px;
+}
+
+.hamburger {
+	visibility: hidden;
+	transition: 0.3s;
+}
+
 /* mobile view work in progress */
 
-@media (max-width: 640px) {
+@media (max-width: 640px), (pointer: coarse) {
+	.hamburger {
+		visibility: visible;
+	}
+
+	.mobile-nav {
+		visibility: visible;
+	}
+
 	.navbar ul li {
 		visibility: hidden;
 	}
@@ -324,8 +386,24 @@ p {
 		font-size: 36px;
 	}
 
-	.info-block {
-		height: auto;
-		margin-bottom: 120px;
+	
+}
+
+@media (pointer:coarse) {
+	.banner {
+		zoom: 2;
+	}
+
+	.navbar ul li {
+		margin-left: 22px;
+	}
+
+	.mobile-nav li {
+		zoom: 2;
+		margin:0;
+	}
+	.navbar {
+		zoom: 2;
+		width: 100%;
 	}
 }
