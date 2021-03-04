@@ -229,7 +229,7 @@ p {
 
 video {
 	position: absolute;
-	height: 640px;
+	height: 80vh;
 	width: 100vw;
 	object-fit: cover;
 }
@@ -239,7 +239,7 @@ video {
 	align-items: center;
 	-webkit-justify-content: center;
 	-webkit-flex-direction: column;
-	height: 640px;
+	height: 80vh;
 	width: 100vw;
 	margin-bottom: 80px;
 	background-color: black;
