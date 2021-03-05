@@ -229,7 +229,7 @@ p {
 
 video {
 	position: absolute;
-	height: 80vh;
+	height: 100vh;
 	width: 100vw;
 	object-fit: cover;
 }
@@ -239,7 +239,7 @@ video {
 	align-items: center;
 	-webkit-justify-content: center;
 	-webkit-flex-direction: column;
-	height: 80vh;
+	height: 100vh;
 	width: 100vw;
 	margin-bottom: 80px;
 	background-color: black;
@@ -345,6 +345,25 @@ video {
 	transition: 0.3s;
 }
 
+
+.arrow {
+    height: 48px;
+    width: 48px;
+    stroke:white;
+    animation: point 2s infinite;
+}
+
+@keyframes point {
+    from {
+        margin-top: 0;
+        opacity:1;
+    }
+    to {
+        margin-top: 64px;
+        opacity: 0;
+    }
+}
+
 /* mobile view work in progress */
 
 @media (max-width: 640px), (pointer: coarse) {
@@ -385,11 +404,18 @@ video {
 	h1 {
 		font-size: 36px;
 	}
-
 	
 }
 
 @media (pointer:coarse) {
+	.button-light {
+		zoom: 2;
+	}
+
+	h1 {
+		zoom: 2;
+	}
+
 	.banner {
 		zoom: 2;
 	}
