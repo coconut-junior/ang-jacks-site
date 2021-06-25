@@ -45,12 +45,14 @@ body {
 }
 
 .home-button {
-	height: 72px;
-	width: 72px;
+	height: 64px;
+	width: 64px;
 	background-image: url('images/home-button.png');
 	background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center;
 	transition: 0.3s;
+	margin: auto;
 }
 
 .menu {
@@ -101,7 +103,7 @@ h3 {
 }
 
 .navbar ul {
-	height: 96px;
+	height: 102px;
 	max-width: 710px;
 	overflow: hidden;
 	margin: auto;
